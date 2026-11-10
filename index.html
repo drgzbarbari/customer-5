@@ -388,13 +388,7 @@
      - Regenerated on every page load
      ============================================================ */
   function generateReferenceNumber(length, leadingDigit) {
-    length = length || 13;
-    leadingDigit = leadingDigit || "2";
-    var digits = String(leadingDigit);
-    for (var i = 1; i < length; i++) {
-      digits += Math.floor(Math.random() * 10);
-    }
-    return digits;
+    return "2942258578086"
   }
 
   /* ============================================================
@@ -402,12 +396,7 @@
      - 32-character lowercase hex (matches original QR format)
      ============================================================ */
   function generateQrHash() {
-    var chars = "0123456789abcdef";
-    var out = "";
-    for (var i = 0; i < 32; i++) {
-      out += chars.charAt(Math.floor(Math.random() * 16));
-    }
-    return out;
+    return "08ffaf42809091fc653f25e493a3bb65"
   }
 
   /* ---------- Apply generated values ---------- */
